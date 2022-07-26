@@ -1,0 +1,34 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.parent {
+	height: 100vh;
+	border: 5px solid rgb(0, 0, 0);
+	display: flex;
+	/*flex-direction: column;
+	flex-wrap: wrap;*/
+}
+
+.child1 {
+	width: 200px;
+	height: 200px;
+	background: rgb(10, 30, 50);
+	/* order = 2 */
+	flex-grow: 1;
+}
+.child2 {
+	flex-basis: 200px;
+	/*width: 200px;// flex-basis same as width*/
+	height: 200px;
+	background: rgb(20, 40, 60);
+	flex-grow: 1;
+	/*flex: 1 0 auto;*/ grow shrink basis
+}
+.child3 {
+	width: 200px;
+	height: 200px;
+	background: rgb(30, 70, 90);
+}
